@@ -43,6 +43,8 @@ Alternatively, double-click the middle button and wait a moment — the IP addre
 
 On the device website (e.g., http://192.168.1.20/), make sure you select the correct e-Paper type (13.3E by default). Under the **"Source Image"** section, you can choose an image from your phone or computer, pinch to zoom and crop it, then process it with the selected algorithm (Floyd-Steinberg dithering usually gives the best quality). Once processed, you can upload the image to the display!
 
+https://github.com/user-attachments/assets/2939e2c9-ce8a-43a8-aa6b-e04f5e882ee7
+
 ## Slideshow
 
 The device also supports periodic refresh from local TF card or remote url. In section **"Local/Remote Image"** of website, check "Slideshow images in TF card" and click "Save to E-Paper", it will read jpg/png images in TF card (under /photos folder) in alphabetical order and display them periodically. If you uncheck "Slideshow images in TF card" and enter an HTTPS image URL, then save to epaper, it will fetch the remote url periodically.
@@ -52,3 +54,15 @@ After displaying the image, the ESP will enter deep sleep and wake up automatica
 > **Note:** Only baseline JPEG images are supported — progressive JPEG is not, due to a limitation of the JPEGDEC library.
 
 > **Note:** If you want to slideshow images in TF card, save jpg/png images in /photos folder in TF card. Note this requires PSRAM for image processing. If the image is too big to fit PSRAM, the system will crash and exit slideshow mode.
+
+https://github.com/user-attachments/assets/2c51f380-22c1-4d44-b713-0c94f185cf90
+
+### Remote image
+
+Use the following URL to test the remote image feature. For best results, set the refresh interval to once per day:
+
+https://epboard1.yellowgrass-550156fe.eastasia.azurecontainerapps.io/image
+
+The e-Paper display will look like this:
+
+<img width="800" alt="Daily Brief" src="https://github.com/user-attachments/assets/29debc76-46de-4ffd-bf41-07f8d8be503e" />

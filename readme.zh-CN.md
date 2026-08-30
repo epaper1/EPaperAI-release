@@ -57,3 +57,13 @@ https://github.com/user-attachments/assets/2939e2c9-ce8a-43a8-aa6b-e04f5e882ee7
 > **注意：** 如果需要轮播TF卡的图片，请把jpg/png图片放在TF卡的/photos目录下。注意该功能需要PSRAM来处理图片，图片如果过大系统会重启，会退出轮播功能。
 
 https://github.com/user-attachments/assets/2c51f380-22c1-4d44-b713-0c94f185cf90
+
+### 远程图片
+
+你可以使用以下 URL 测试远程图片功能。为获得最佳效果，建议将刷新间隔设置为每天一次：
+
+https://epboard1.yellowgrass-550156fe.eastasia.azurecontainerapps.io/image
+
+墨水屏显示效果如下：
+
+<img width="800" alt="每日简报" src="https://github.com/user-attachments/assets/40a5ee99-663d-436e-a6a9-7b798e4b3751" />
