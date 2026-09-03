@@ -1,14 +1,20 @@
 [English](readme.md) | [中文](readme.zh-CN.md)
 
-感谢您选择 Maza-AI 智能板。本指南涵盖设备使用与开发。
+感谢您选择 Maza-AI 智能板。本指南涵盖设备烧录与使用。
 
 # 烧录教程
 
+## 安装 ESP-IDF
+在 https://dl.espressif.cn/dl/eim/ 网站上下载EIM，并安装 ESP-IDF v6.1。安装教程可参考https://docs.espressif.com/projects/esp-idf/zh_CN/v6.1/esp32/get-started/index.html#get-started-set-up-tools。
+
+烧录的命令需要在装好的IDF_v6.1_Powershell下面执行。
+
+## 检查串口
 使用以下命令检查可用串口，请确认板子是否连接到机器。烧录命令中默认使用COM3。
 
 `powershell -NoProfile "[System.IO.Ports.SerialPort]::GetPortNames()"`
 
-
+## 烧录
 <details open>
 <summary><strong>Maza-AI S31</strong></summary>
 

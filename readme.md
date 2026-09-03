@@ -1,13 +1,20 @@
 [English](readme.md) | [中文](readme.zh-CN.md)
 
-Thank you for choosing the Maza-AI board. This guide covers device usage and development.
+Thank you for choosing the Maza-AI board. This guide covers device flash and usage.
 
 # Flash instruction
 
+## Install ESP-IDF
+Download EIM on https://dl.espressif.cn/dl/eim/, and install ESP-IDF v6.1. Refer to instruction for installation: https://docs.espressif.com/projects/esp-idf/en/v6.1/esp32/get-started/index.html#installation
+
+Following flashing commands need run in the "IDF_v6.1_PowerShell" (You can see the app or icon after installation).
+
+## Check serial port
 Use the following command to list the available serial ports and confirm that the board is connected to your computer. The flashing commands use `COM3` by default.
 
 `powershell -NoProfile "[System.IO.Ports.SerialPort]::GetPortNames()"`
 
+## Flash
 <details open>
 <summary><strong>Maza-AI S31</strong></summary>
 
